@@ -1,0 +1,78 @@
+@import "constant";
+
+//轮播图
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    margin-left: -5%;
+    text-align: right;
+    list-style: none;
+    li{
+        width: 5px;
+        height: 5px;
+    }
+    .active{
+        width: 8px;
+        height:8px;
+    }
+}
+
+//卡片
+.container-fluid .jumbotron{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.jumbotron{
+    @include jumbotron;
+
+}
+
+.div-bottom{
+    @include div-bottom;
+}
+.float-right{
+    @include float-right;
+}
+
+.col-xs-6,.col-xs-12{
+    @include col-xs-6;
+}
+
+
+.mytable {
+    width: 100%;
+}
+
+.mytable tr td {
+    width: 20%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+.mytable tr td img{
+    max-width: 80%;
+    width: 40%;
+}
+.mytable tr td span {
+    font-size: 10px;
+    margin: 6px 0;
+    display: block;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 992px) {
+    .masthead,
+    .cover-container {
+        width: 700px;
+    }
+}

@@ -1,0 +1,77 @@
+@import "constant";
+
+//轮播图
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    margin-left: -5%;
+    text-align: right;
+    list-style: none;
+    li{
+        width: 5px;
+        height: 5px;
+    }
+    .active{
+        width: 8px;
+        height:8px;
+    }
+}
+
+.container-fluid .jumbotron{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.jumbotron{
+  @include jumbotron;
+
+}
+
+.div-bottom{
+  @include div-bottom;
+}
+
+.col-xs-6{
+  @include col-xs-6;
+}
+
+.float-right{
+  @include float-right;
+}
+
+
+
+/*按钮大小*/
+.btn{
+    padding: 3px 5px;
+    font-size: 10px;
+}
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-xs- img{
+    width: 20px;
+}
+
+.mycol-4{
+    margin-left: -30px;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.mycol-6{
+    text-align: right;
+    margin: 10px 0 10px 30px;
+}
+
+.mycol-6 img{
+    width: 75px;
+}
+

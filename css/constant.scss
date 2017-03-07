@@ -1,0 +1,84 @@
+
+$body-background-color:#eaeaea;  //主体背景色
+
+//导航栏
+$nav-background-color:#fb7299; //导航栏背景色
+$nav-border-bottom-color:#FFF; //导航栏底部切换条颜色
+$nav-unchecked-color:#fdc6d6; //Tab项未选中
+$nav-checked-color:#fff;     //Tab项被选中
+
+
+$small-fontColor:#999999;//小字体颜色
+$small-fontSize:0.8em;//小字体大小
+
+$car-boxColor:#d2d2d2;//卡片阴影颜色
+
+$small-fontColor:#c0c0c0;//小字体颜色
+$small-fontSize:0.8em;//小字体大小
+
+
+//卡片设置
+@mixin jumbotron{
+  border-radius: 6px;
+  padding: 0;
+  margin-bottom: 15px;
+  color: inherit;
+  background-color: #fff;
+  box-shadow:2px 2px 2px $car-boxColor;
+
+  div p{
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0 10px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    margin-bottom: 0;
+
+    strong{
+      color: $nav-background-color;
+    }
+  }
+
+  span{
+    color: $small-fontColor;
+  }
+
+  img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
+
+/*卡片底部*/
+@mixin div-bottom{
+  text-align: left;
+  font-size: 10px;
+  color: #999999;
+  padding: 10px;
+
+  img{
+    width: 12px;
+    margin-right: 3px;
+  }
+
+  div{
+    display: inline;
+  }
+}
+
+@mixin float-right{
+  float: right;
+}
+
+
+/*卡片间距*/
+@mixin col-xs-6{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+

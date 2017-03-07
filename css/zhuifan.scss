@@ -1,0 +1,45 @@
+@import "constant";
+
+.top {
+    margin-top: 54px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #fff;
+}
+
+.top_image {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(102, 94, 87, 0.11);
+}
+
+.top div li {
+    float: left;
+    list-style: none;
+}
+
+//卡片
+.container-fluid .jumbotron{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.jumbotron{
+    @include jumbotron;
+
+}
+
+.div-bottom{
+    @include div-bottom;
+}
+.float-right{
+    @include float-right;
+}
+
+.col-xs-6,.col-xs-12{
+    @include col-xs-6;
+}
+
+.col-xs-4,.col-xs-12{
+    @include col-xs-6;
+}

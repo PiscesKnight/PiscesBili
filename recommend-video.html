@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale=1,maximum-scale=1,user-scalable=0"/>
+    <meta name="description" content>
+    <meta name="author" content>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/recommend/recommend-video.css" type="text/css" rel="stylesheet">
+
+    <title>bilibili</title>
+</head>
+<body>
+<div>
+    <img src="image/recommend/rmtj1.jpg" class="main-img">
+</div>
+
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a onclick="jump('1')">简介</a></li>
+                                <li><a onclick="jump('2')">评论（5999）</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="play-div">
+        <img src="image/recommend/play.png">
+    </div>
+
+    <div class="main-div container-fluid">
+        <p>【过气up/Gosick/结婚】你们老婆跟人跑了</p>
+        <div class="div-bottom">
+            <div>
+                <img src="image/recommend/gks.png">47.9万
+            </div>
+            <div>
+                <img src="image/recommend/pls.png">1184
+            </div>
+
+        </div>
+
+        <p>你们老婆跟人跑了，老司机真的顶不住</p>
+
+        <div class="row" id="row">
+            <div class="col-xs-3">
+                <div class="mydiv">
+                    <span class="num">3</span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="mydiv">
+                    <span class="num">33</span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="mydiv">
+                    <span class="num">1133</span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="mydiv">
+                    <span class="num">4</span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <img src="image/recommend/share.png">
+            </div>
+            <div class="col-xs-3">
+                <img src="image/recommend/toubi.png">
+            </div>
+            <div class="col-xs-3">
+                <img src="image/recommend/collect.png">
+            </div>
+            <div class="col-xs-3">
+                <img src="image/recommend/Cache.png">
+            </div>
+            <div class="col-xs-3">
+                <span>分享</span>
+            </div>
+            <div class="col-xs-3">
+                <span>投币</span>
+            </div>
+            <div class="col-xs-3">
+                <span>收藏</span>
+            </div>
+            <div class="col-xs-3">
+                <span>缓存</span>
+            </div>
+        </div>
+    </div>
+    <!--<iframe width="816" height="459" src="https://www.youtube.com/embed/zpOULjyy-n8" frameborder="0" allowfullscreen>-->
+
+    <!--</iframe>-->
+
+    <!--<div class="embed-responsive embed-responsive-16by9">-->
+        <!--<iframe class="embed-responsive-item" src="http://video.xianrou.com/2017/02/13/58a10065a978a.mp4"></iframe>-->
+    <!--</div>-->
+
+<script>
+    window.onload= function () {
+        for (var i = 0;i<3;i++){
+
+        var spanNum = document.getElementsByClassName("num")[i];
+        document.getElementById("row").getElementsByClassName("mydiv")[i].style.width=(spanNum.offsetWidth+16)+'px';
+        }
+    }
+</script>
+</body>
+</html>
